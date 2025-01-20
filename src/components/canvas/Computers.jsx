@@ -2,6 +2,9 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { useEffect, useState } from "react";
 
+// Remove unnecessary imports from 'three-stdlib'
+import { extend } from '@react-three/fiber';
+
 const Computers = ({ isMobile }) => {
   const { scene } = useGLTF("./wom/scene.gltf");
 
